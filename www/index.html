@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>GMD COMMANDO - Edition Ultimate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="hud">
+            <div id="hpBar">
+                <div id="hpFill"></div>
+            </div>
+            <div id="scoreDisplay">SCORE: 0</div>
+            <div id="levelDisplay">NIVEAU: 1</div>
+        </div>
+        
+        <div id="masterName">COMMANDO: <span id="playerName">DevKira</span></div>
+        
+        <div id="gameOverScreen">
+            <h1 id="gameOverTitle">GAME OVER</h1>
+            <p id="finalScore">Score: 0</p>
+            <button id="restartBtn">REJOUER</button>
+        </div>
+        
+        <div id="startScreen">
+            <h1 id="gameTitle">GMD COMMANDO</h1>
+            <p id="startInstructions">Appuie sur COMMENCER</p>
+            <button id="startBtn">COMMENCER</button>
+        </div>
+    </div>
+    
+    <div id="touchControls">
+        <div class="dpad">
+            <button class="ctrl-btn" id="upBtn">▲</button>
+            <div class="dpad-row">
+                <button class="ctrl-btn" id="leftBtn">◀</button>
+                <button class="ctrl-btn" id="downBtn">▼</button>
+                <button class="ctrl-btn" id="rightBtn">▶</button>
+            </div>
+        </div>
+        <button id="fireBtn">🔥 TIRER</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
